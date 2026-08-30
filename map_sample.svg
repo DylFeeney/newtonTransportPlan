@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1190.64 841.92">
+  <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: none;
+      }
+
+      .st0, .st1, .st2, .st3, .st4 {
+        stroke-miterlimit: 10;
+      }
+
+      .st0, .st1, .st3 {
+        stroke-width: 2px;
+      }
+
+      .st0, .st3, .st4 {
+        stroke: #0882c6;
+      }
+
+      .st5 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 7.18px;
+        font-weight: 700;
+      }
+
+      .st1, .st2 {
+        stroke: #f286a8;
+      }
+
+      .st2, .st3, .st4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="connections">
+    <g id="pink">
+      <path id="c-clonee-intel" class="st1" d="M374.89,329.58c1.86-2.56,1.37-7.32-1.86-9.39-2.77-.85-5.6-1.72-8.33-2.57-3.01-.54-5.52-3.4-5.16-6.51.24-3.54.57-5.19.81-8.73.05-.58.04-3.06-.17-4.14-.49-2.49-1.26-2.98-1.02-4.35.12-.69.08-2.38,2.04-3.33,14.25-11.22,28.51-22.44,42.76-33.66,1.64-1.01,3.88-2.17,6.69-3.04,3.15-.99,5.94-1.29,8-1.35,5.88-.18,26.68-1.45,55.14-3"/>
+    </g>
+    <g id="blue">
+      <path id="c-m3parkway-clonee" class="st0" d="M459.7,160.2c2.18,12.93,3.56,23.52,4.42,30.81,1.71,14.59,1.92,20.98,3.87,32.61,1.87,11.16,4.17,20.12,5.8,25.89"/>
+      <path id="c-clonee-hansfield" class="st0" d="M498.91,282.02c-3.83-2.1-9.98-6.11-15.52-13.08-6.01-7.56-8.51-15.08-9.61-19.42"/>
+      <line id="c-hansfield-clonsilla" class="st3" x1="517.75" y1="289.63" x2="498.91" y2="282.02"/>
+      <path id="c-clonsilla-intel" class="st0" d="M374.89,329.58c9.11,5.88,13.92,5.68,16.65,4.22,1.51-.8,1.57-1.56,7.16-8.84,4.91-6.39,6.2-7.55,7.9-8.39,3.53-1.75,7.27-1.37,9.78-.81,15.24,2.79,30.49,5.57,45.73,8.36,3.42.65,11.69,1.69,19.52-2.87,6.17-3.59,9.41-9.1,10.97-11.76,4.33-7.37,2.9-10.61,6.32-14.51,2.65-3.02,7.8-5.99,18.84-5.36"/>
+    </g>
+  </g>
+  <g id="stations">
+    <g id="blue1" data-name="blue">
+      <rect id="s-m3parkway" class="st4" x="456.84" y="157.33" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-9.45 30.26) rotate(-3.73)"/>
+      <rect id="s-hansfield" class="st4" x="496.05" y="279.15" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(165.95 -184.44) rotate(25)"/>
+      <rect id="s-clonsilla" class="st4" x="514.88" y="286.77" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(68.94 -98.34) rotate(11.62)"/>
+      <rect id="s-clonee" class="st4" x="470.92" y="246.64" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-13.87 28.33) rotate(-3.38)"/>
+    </g>
+    <g id="pink1" data-name="pink">
+      <rect id="s-intel" class="st2" x="372.02" y="326.71" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(215.01 -143.29) rotate(30)"/>
+    </g>
+  </g>
+  <g id="station_x5F_names">
+    <text id="sn-m3parkway" class="st5" transform="translate(410.92 165.57)"><tspan x="0" y="0">M3 Parkway</tspan></text>
+    <text id="sn-clonee" class="st5" transform="translate(440.85 243.81)"><tspan x="0" y="0">Clonee</tspan></text>
+    <text id="sn-hansfield" class="st5" transform="translate(464.49 292.93)"><tspan x="0" y="0">Hansfield</tspan></text>
+    <text id="sn-intel" class="st5" transform="translate(347.86 333.12)"><tspan x="0" y="0">Intel</tspan></text>
+  </g>
+</svg>
