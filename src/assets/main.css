@@ -75,6 +75,34 @@ select:focus {
   outline-offset: 1px;
 }
 
+button {
+  justify-self: start;
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: #2d6bdb;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+button:hover:not(:disabled) {
+  background: #245ab9;
+}
+
+button:focus-visible {
+  outline: 3px solid rgb(45 107 219 / 30%);
+  outline-offset: 2px;
+}
+
+button:disabled,
+select:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
 .map-container {
   position: relative;
   min-height: 0;
@@ -89,6 +117,25 @@ select:focus {
   width: 100%;
   height: calc(100% - clamp(0.75rem, 2vw, 1.5rem));
   object-fit: contain;
+}
+
+.transport-map > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.has-highlighted-route .is-route-element {
+  opacity: 1;
+}
+
+.has-highlighted-route .is-route-target {
+  opacity: 0.18;
+  transition: opacity 180ms ease;
+}
+
+.has-highlighted-route .is-route-target.is-route-element {
+  opacity: 1;
 }
 
 @media (max-width: 420px) {
