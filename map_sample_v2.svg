@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1190.64 841.92">
+  <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10 {
+        stroke-miterlimit: 10;
+      }
+
+      .st0, .st1, .st2, .st3, .st5, .st7, .st10 {
+        stroke-width: 2px;
+      }
+
+      .st0, .st2, .st3, .st5, .st10 {
+        fill: none;
+      }
+
+      .st0, .st7, .st9 {
+        stroke: #0882c6;
+      }
+
+      .st1, .st2, .st6 {
+        stroke: #f286a8;
+      }
+
+      .st1, .st4, .st6, .st7, .st8, .st9 {
+        fill: #fff;
+      }
+
+      .st11 {
+        letter-spacing: -.02em;
+      }
+
+      .st3, .st4 {
+        stroke: #981a36;
+      }
+
+      .st12 {
+        letter-spacing: -.04em;
+      }
+
+      .st5 {
+        stroke: #0080c5;
+      }
+
+      .st8, .st10 {
+        stroke: #f47621;
+      }
+
+      .st13 {
+        letter-spacing: -.06em;
+      }
+
+      .st14 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 7.18px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="connections">
+    <g id="c-pink">
+      <path id="c-clonee-intel" class="st2" d="M374.89,329.58c1.86-2.56,1.37-7.32-1.86-9.39-2.77-.85-5.6-1.72-8.33-2.57-3.01-.54-5.52-3.4-5.16-6.51.24-3.54.57-5.19.81-8.73.05-.58.04-3.06-.17-4.14-.49-2.49-1.26-2.98-1.02-4.35.12-.69.08-2.38,2.04-3.33,14.25-11.22,28.51-22.44,42.76-33.66,1.64-1.01,3.88-2.17,6.69-3.04,3.15-.99,5.94-1.29,8-1.35,5.88-.18,26.68-1.45,55.14-3"/>
+      <line id="c-lucanAdamstown-Peamount" class="st1" x1="454.33" y1="422.11" x2="457.19" y2="465.27"/>
+      <polyline id="c-peamount-Saggart" class="st1" points="457.19 465.27 462.34 521.98 504.49 566.52"/>
+    </g>
+    <g id="c-blue">
+      <path id="c-m3parkway-clonee" class="st0" d="M459.7,160.2c2.18,12.93,3.56,23.52,4.42,30.81,1.71,14.59,1.92,20.98,3.87,32.61,1.87,11.16,4.17,20.12,5.8,25.89"/>
+      <path id="c-clonee-hansfield" class="st0" d="M498.91,282.02c-3.83-2.1-9.98-6.11-15.52-13.08-6.01-7.56-8.51-15.08-9.61-19.42"/>
+      <line id="c-hansfield-clonsilla" class="st7" x1="517.75" y1="289.63" x2="498.91" y2="282.02"/>
+      <path id="c-clonsilla-intel" class="st0" d="M374.89,329.58c9.11,5.88,13.92,5.68,16.65,4.22,1.51-.8,1.57-1.56,7.16-8.84,4.91-6.39,6.2-7.55,7.9-8.39,3.53-1.75,7.27-1.37,9.78-.81,15.24,2.79,30.49,5.57,45.73,8.36,3.42.65,11.69,1.69,19.52-2.87,6.17-3.59,9.41-9.1,10.97-11.76,4.33-7.37,2.9-10.61,6.32-14.51,2.65-3.02,7.8-5.99,18.84-5.36"/>
+      <path id="c-intel-maynooth" class="st0" d="M374.89,329.58c-6.23-4.66-15.88-10.81-28.79-14.88-11.5-3.62-13.16-1.68-32.69-5.88-19.1-4.11-23.24-7.19-33.92-6.48-9.66.65-17.33,3.91-22.21,6.48"/>
+      <line id="c-lucanAdamstown-clondalkinFonthill" class="st0" x1="454.33" y1="422.11" x2="560" y2="432.14"/>
+      <path id="c-hazelhatch-lucanAdamstown" class="st5" d="M454.33,422.11c-7.2-.75-18.96-1.08-32.58,2.87-12.83,3.72-21.46,9.55-28.3,14.26-6.87,4.73-16.53,12.41-26.02,24.12"/>
+      <path id="c-hazelhatch-sallins" class="st5" d="M367.43,464.41c-2.91,3.13-7.22,7.53-12.82,12.37-8.4,7.27-15.76,12.15-22.66,16.48-26.87,16.84-32.7,16.42-48.99,28.48-7.31,5.41-11.76,9.66-20.6,18.09-12.42,11.85-17.03,17.91-37.61,41.64-12.27,14.15-33.58,38.7-47.82,53.46-6.09,6.31-8.72,8.58-13.97,14.78-4.96,5.85-6.89,8.87-11.28,12.45-5.38,4.38-10.83,6.64-14.6,7.87"/>
+    </g>
+    <g id="c-orange">
+      <path id="c-lucanAdamstown-1" class="st10" d="M454.33,422.11l-28.92-27.49c-.34-.15-2.02-1.39-2.6-2.78-.63-1.52.41-2.36,1.7-3.67,3.71-2.95,7.5-6.06,11.34-9.34,4.09-3.5,7.98-6.97,11.68-10.39-.04-.34-.22-2.21,1.12-3.83,1.58-1.9,3.92-1.83,4.19-1.81,1.55-.1,4.02-.07,6.85.85,3.61,1.18,5.99,3.21,7.19,4.39,2.55,3.06,7.6,8.28,15.66,11.78,5.57,2.43,10.63,3.18,14.09,3.4,3.55-.2,10-1.05,16.96-4.85,6.23-3.41,10.17-7.72,12.3-10.43,1.79-1.71,4.98-4.31,9.61-5.97,6.28-2.25,11.69-1.53,14.03-1.19,8.08,1.17,15.64,5.49,15.64,5.49"/>
+      <path id="c-lucanAdamstown-LiffeyValley" class="st10" d="M583.87,370.29c-2.2.42-5.99.84-10.48-.21-3.51-.82-6.17-2.24-7.88-3.34"/>
+      <path id="c-clondalkin-fonthill" class="st10" d="M560,432.14c-3.31-9.69-3.4-17.33-2.87-22.52.83-8.07,3.33-11.95,5.73-22.75,1.88-8.44,2.45-15.52,2.64-20.13"/>
+      <path id="c-clondalkinFontill-clondalkinVillage" class="st10" d="M560,432.14c.64,3.89,3.37,18.47,3.27,23.15-.08,3.72-.63,6.91-1.25,9.4-.05.57-.28,4.4,2.69,7.44,3.03,3.11,6.97,2.9,7.52,2.87"/>
+      <path id="c-clondalkinVillage-redCow" class="st10" d="M623.69,478.95l-3.2,3.9c-.54.69-1.37,1.05-2.18.93-1.07-.17-1.93-1.18-1.94-2.42-.84-1.7-1.67-3.4-2.51-5.1-.63-.87-1.66-2.07-3.19-3.16-1.74-1.24-3.41-1.83-4.51-2.12-7.88-2.21-15.76-4.42-23.64-6.63-1.14-.46-2.32-.13-2.84.66-.42.64-.26,1.39-.21,1.58.15.49.83,2.77-.39,5.04-1.19,2.22-3.71,3.54-6.44,3.38"/>
+      <path id="c-palmerstown-chapelizod" class="st10" d="M612.66,370.29c10.66,3.4,18.29,5.73,21.62,6.49.78.18,2.35.51,4.06,1.6.92.59,1.43,1.11,3.7,3.3,1.86,1.79,2.79,2.69,2.87,2.75,3.18,2.37,5.71.89,8.47,2.63,1.19.75,2.73,2.29,3.58,5.86"/>
+      <path id="c-chapelizod-ballyfermot" class="st10" d="M656.81,421.61c.81-5.94.04-10.37-.68-13.06-1.35-5.05-2.02-7.58-3.94-10.15-.87-1.17-1.87-2.21-1.57-3.24.47-1.61,3.75-2.09,6.53-2.24"/>
+      <path id="c-ballyfermot-kylemore" class="st10" d="M656.81,421.61c.14,3.13.55,6.78,1.47,10.76,1.73,7.44,4.62,13.3,7.09,17.38"/>
+      <path id="c-redCow-kylemore" class="st10" d="M623.69,478.95c1.35-2.28,2.26-5.36,4.77-6.91,15.49-9.58,29.91-16.12,36.91-22.75"/>
+      <path id="c-blanchardstownCentre-blanchardstownHospital" class="st10" d="M591.65,265.76c6.42,3.52,11.57,6.54,15.14,8.67,5.53,3.31,8.17,5.05,13.16,7.84,5.12,2.86,9.42,4.98,12.29,6.34"/>
+      <path id="c-blanchardstownHospital-palmerstown" class="st10" d="M612.66,370.29l-14.44-4.97c-.2-4.15-.35-15.07,4.3-25.43,2.13-4.73,3.21-7.15,5.73-9.79,2.16-2.27,4.35-3.62,6.45-7.28.89-1.55.77-1.8,2.02-4.06,1.39-2.52,2.27-3.55,4.42-6.65,3.57-5.13,2.79-4.65,5.13-7.8,2.63-3.53,3.64-4.16,4.3-6.33.74-2.42.41-4.7,0-6.26"/>
+      <path id="c-blanchardstownHospital-liffeyValley" class="st10" d="M583.87,369.7l14.36-4.38c-.2-4.15-.35-15.07,4.3-25.43,2.13-4.73,3.21-7.15,5.73-9.79,2.16-2.27,4.35-3.62,6.45-7.28.89-1.55.77-1.8,2.02-4.06,1.39-2.52,2.27-3.55,4.42-6.65,3.57-5.13,2.79-4.65,5.13-7.8,2.63-3.53,3.64-4.16,4.3-6.33.74-2.42.41-4.7,0-6.26"/>
+    </g>
+    <g id="c-red">
+      <path id="c-saggart-redCow" class="st3" d="M504.49,565.83c6,1.6,11.08,2.16,14.69,2.36,6.59.36,11.07.55,14.21-2.36,1.73-1.6,1.4-2.61,3.46-5.76,0,0,2.72-4.15,8.48-8.25,12.89-9.18,76.4-18.51,86.45-42.37,2.46-5.84,1.88-12.06,1.88-12.06-.87-9.39-7.09-15.82-9.96-18.44"/>
+    </g>
+  </g>
+  <g id="stations">
+    <g id="s-blue">
+      <rect id="s-m3parkway" class="st9" x="456.84" y="157.33" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-9.45 30.26) rotate(-3.73)"/>
+      <rect id="s-hansfield" class="st9" x="496.05" y="279.15" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(165.95 -184.44) rotate(25)"/>
+      <rect id="s-clonsilla" class="st9" x="514.88" y="286.77" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(68.94 -98.34) rotate(11.62)"/>
+      <rect id="s-hazelhatch" class="st9" x="364.57" y="460.85" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(435.51 -123.99) rotate(45)"/>
+      <rect id="s-maynooth" class="st9" x="254.4" y="305.95" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(447.11 -45.46) rotate(67.98)"/>
+      <rect id="s-sallins" class="st9" x="134.58" y="667.17" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(678.88 252.07) rotate(63.93)"/>
+      <rect id="s-ballyfermot" class="st9" x="653.95" y="418.74" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-91.87 201.09) rotate(-16.28)"/>
+      <rect id="s-clonee" class="st9" x="470.92" y="246.64" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-13.87 28.33) rotate(-3.38)"/>
+    </g>
+    <g id="s-pink">
+      <rect id="s-intel" class="st6" x="372.02" y="326.71" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(215.01 -143.29) rotate(30)"/>
+      <rect id="s-celbridgeJunction" class="st6" x="356.45" y="356.47" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(272.78 -141.4) rotate(35.19)"/>
+      <rect id="s-lucanAdamstown" class="st6" x="451.46" y="419.24" width="5.73" height="5.73" rx=".5" ry=".5"/>
+      <rect id="s-peamount" class="st6" x="454.33" y="462.41" width="5.73" height="5.73" rx=".5" ry=".5"/>
+    </g>
+    <g id="s-red">
+      <rect id="s-saggart" class="st4" x="501.63" y="562.96" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-228.28 760.07) rotate(-63.13)"/>
+    </g>
+    <g id="s-orange">
+      <rect id="s-clondalkinFonthill" class="st8" x="557.13" y="429.27" width="5.73" height="5.73" rx=".5" ry=".5"/>
+      <rect id="s-clondalkinVillage" class="st8" x="569.79" y="472.14" width="5.73" height="5.73" rx=".5" ry=".5"/>
+      <rect id="s-palmerstown" class="st8" x="609.79" y="367.42" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(167.17 -190.07) rotate(20.37)"/>
+      <rect id="s-liffeyValley" class="st8" x="581" y="366.84" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-13.8 22.76) rotate(-2.21)"/>
+      <rect id="s-palmerstown1" data-name="s-palmerstown" class="st8" x="654.09" y="390.05" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-96.72 258.97) rotate(-20.81)"/>
+      <rect id="s-kylemore" class="st8" x="662.51" y="446.89" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-131.16 347.12) rotate(-26.71)"/>
+      <rect id="s-redCow" class="st8" x="620.83" y="476.08" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(-162.47 460.62) rotate(-36.19)"/>
+      <rect id="s-blanchardstownHospital" class="st8" x="629.38" y="285.75" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(195.2 -251.77) rotate(26.5)"/>
+      <rect id="s-chapelizord" class="st8" x="588.78" y="262.9" width="5.73" height="5.73" rx=".5" ry=".5" transform="translate(245.12 -282.5) rotate(33.52)"/>
+    </g>
+  </g>
+  <g id="station_x5F_names">
+    <text id="sn-m3parkway" class="st14" transform="translate(410.92 165.57)"><tspan x="0" y="0">M3 Parkway</tspan></text>
+    <text id="sn-clonee" class="st14" transform="translate(440.85 243.81)"><tspan x="0" y="0">Clonee</tspan></text>
+    <text id="sn-hansfield" class="st14" transform="translate(464.49 292.93)"><tspan x="0" y="0">Hansfield</tspan></text>
+    <text id="sn-imaynooth" class="st14" transform="translate(260.17 320.57)"><tspan x="0" y="0">Maynooth</tspan></text>
+    <text id="sn-celbridgeJunction" class="st14" transform="translate(313.28 364.68)"><tspan x="0" y="0">Celbridge</tspan><tspan x="0" y="8.61">Junction</tspan></text>
+    <text id="sn-intel" class="st14" transform="translate(347.19 332.63)"><tspan x="0" y="0">Intel</tspan></text>
+    <text id="sn-hazelhatch" class="st14" transform="translate(374.89 468.14)"><tspan x="0" y="0">Hazelhatch</tspan></text>
+    <text id="sn-peamount" class="st14" transform="translate(419.1 475.01)"><tspan x="0" y="0">Peamount</tspan></text>
+    <text id="sn-saggart" class="st14" transform="translate(501.49 557.5)"><tspan x="0" y="0">Saggart</tspan></text>
+    <text id="sn-redCow" class="st14" transform="translate(633.13 482.75)"><tspan x="0" y="0">Red Cow</tspan></text>
+    <text id="sn-kylemore" class="st14" transform="translate(673.85 456.51)"><tspan x="0" y="0">Kylemore</tspan></text>
+    <text id="sn-clondalkinVillage" class="st14" transform="translate(523.91 487.65)"><tspan x="0" y="0">Clondalkin </tspan><tspan class="st11" x="38.68" y="0">V</tspan><tspan x="43.34" y="0">illage</tspan></text>
+    <text id="sn-clondalkinFonthill" class="st14" transform="translate(490.19 443.72)"><tspan x="0" y="0">Clondalkin Fonthill</tspan></text>
+    <text id="sn-lucanAdamstown" class="st14" transform="translate(461.85 415.94)"><tspan x="0" y="0">Lucan</tspan><tspan class="st12" x="21.14" y="0"> </tspan><tspan x="22.87" y="0">Adamstown</tspan></text>
+    <text id="sn-palmerstown" class="st14" transform="translate(616.2 363.57)"><tspan x="0" y="0">Palmerstown</tspan></text>
+    <text id="sn-liffeyValley" class="st14" transform="translate(567.52 382.34)"><tspan x="0" y="0" xml:space="preserve">Liffey  </tspan><tspan class="st13" x="23.13" y="0">V</tspan><tspan x="27.52" y="0">alley</tspan></text>
+    <text id="sn-chapelizod" class="st14" transform="translate(664.66 390.21)"><tspan x="0" y="0">Chapelizod</tspan></text>
+    <text id="sn-ballyfermot" class="st14" transform="translate(609.91 417.67)"><tspan x="0" y="0">Ballyfermot</tspan></text>
+    <text id="sn-blanchardstownHospital" class="st14" transform="translate(640.3 291.72)"><tspan x="0" y="0">Blanchardstown Hospital</tspan></text>
+    <text id="sn-blanchardstownHospital1" data-name="sn-blanchardstownHospital" class="st14" transform="translate(518.93 279.67)"><tspan x="0" y="0">Blanchardstown Centre</tspan></text>
+    <text id="sn-sallins" class="st14" transform="translate(141.84 679.86)"><tspan x="0" y="0">Sallins</tspan></text>
+  </g>
+</svg>
