@@ -130,12 +130,30 @@ select:disabled {
 }
 
 .has-highlighted-route .is-route-target {
-  opacity: 0.18;
+  opacity: 0.16;
   transition: opacity 180ms ease;
 }
 
 .has-highlighted-route .is-route-target.is-route-element {
   opacity: 1;
+}
+
+.has-highlighted-route :is(path, line, polyline).is-route-element {
+  stroke: #0b3d91 !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4px !important;
+  filter: drop-shadow(0 0 1.5px rgb(11 61 145 / 45%));
+}
+
+.has-highlighted-route rect.is-route-element {
+  fill: #0b3d91 !important;
+  stroke: #fff !important;
+  stroke-width: 1.5px !important;
+}
+
+.has-highlighted-route text.is-route-element {
+  fill: #0b3d91 !important;
 }
 
 @media (max-width: 420px) {

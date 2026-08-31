@@ -1,6 +1,6 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
-import mapSample from '../map_sample.svg?raw'
+import mapSample from '../map_sample_v2.svg?raw'
 import { stations } from './data/stations'
 import { segments } from './data/segments'
 import { findRoute, getRouteSegments } from './services/routeFinder'
@@ -37,6 +37,7 @@ function highlightRoute() {
   }
 
   const route = findRoute(startStation.id, endStation.id)
+  console.log(route)
   const routeSegments = getRouteSegments(route)
 
   if (!route) {
@@ -45,7 +46,7 @@ function highlightRoute() {
   }
 
   const routeElementIds = new Set([
-    ...routeSegments.map((segment) => segment.svgId),
+    ...routeSegments.flatMap((segment) => segment.svgIds),
     ...route.flatMap((stationId) => {
       const station = stations.find((item) => item.id === stationId)
       return [station?.svgId, station?.labelSvgId].filter(Boolean)
@@ -53,7 +54,7 @@ function highlightRoute() {
   ])
 
   const mapElementIds = [
-    ...Object.values(segments).map((segment) => segment.svgId),
+    ...Object.values(segments).flatMap((segment) => segment.svgIds),
     ...stations.flatMap((station) => [station.svgId, station.labelSvgId].filter(Boolean)),
   ]
 
