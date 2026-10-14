@@ -1,36 +1,540 @@
-// Maps a logical connection to the SVG element(s) that draw it.
-// SVG IDs come directly from map_sample_v2.svg.
+// Station-to-station links drawn in map_sample_v3.svg. Links are bidirectional.
+const links = [
+  {
+    from: 'm3-parkway',
+    to: 'clonee',
+    svgIds: 'c-m3parkway-clonee',
+    line: 'blue',
+  },
+  {
+    from: 'clonee',
+    to: 'hansfield',
+    svgIds: 'c-clonee-hansfield',
+    line: 'blue',
+  },
+  {
+    from: 'hansfield',
+    to: 'clonsilla',
+    svgIds: 'c-hansfield-clonsilla',
+    line: 'blue',
+  },
+  {
+    from: 'clonsilla',
+    to: 'intel',
+    svgIds: 'c-clonsilla-intel',
+    line: 'blue',
+  },
+  {
+    from: 'intel',
+    to: 'maynooth',
+    svgIds: 'c-intel-maynooth',
+    line: 'blue',
+  },
+  {
+    from: 'clonee',
+    to: 'intel',
+    svgIds: 'c-clonee-intel',
+    line: 'pink',
+  },
+  {
+    from: 'lucan-adamstown',
+    to: 'peamount',
+    svgIds: 'c-lucanAdamstown-Peamount',
+    line: 'pink',
+  },
+  {
+    from: 'peamount',
+    to: 'saggart',
+    svgIds: 'c-peamount-Saggart',
+    line: 'pink',
+  },
+  {
+    from: 'lucan-adamstown',
+    to: 'celbridge-junction',
+    svgIds: 'c-lucanAdamstown-celbridgeJunction',
+    line: 'pink',
+  },
+  {
+    from: 'intel',
+    to: 'celbridge-junction',
+    svgIds: 'c-intel-celbridgeJunction',
+    line: 'pink',
+  },
+  {
+    from: 'clonee',
+    to: 'blanchardstown-centre',
+    svgIds: 'c-clonee-blanchardstownCentre',
+    line: 'pink',
+  },
+  {
+    from: 'blanchardstown-centre',
+    to: 'mulhuddart',
+    svgIds: 'c-blanchardstownCentre-mulhuddart',
+    line: 'pink',
+  },
+  {
+    from: 'saggart',
+    to: 'tallaght',
+    svgIds: 'c-saggart-tallaght',
+    line: 'pink',
+  },
+  {
+    from: 'lucan-adamstown',
+    to: 'clondalkin-fonthill',
+    svgIds: 'c-lucanAdamstown-clondalkinFonthill',
+    line: 'blue',
+  },
+  {
+    from: 'hazelhatch',
+    to: 'lucan-adamstown',
+    svgIds: 'c-hazelhatch-lucanAdamstown',
+    line: 'blue',
+  },
+  {
+    from: 'hazelhatch',
+    to: 'sallins',
+    svgIds: 'c-hazelhatch-sallins',
+    line: 'blue',
+  },
+  {
+    from: 'clondalkin-fonthill',
+    to: 'parkwest',
+    svgIds: 'c-fonthill-parkwest',
+    line: 'blue',
+  },
+  {
+    from: 'parkwest',
+    to: 'ballyfermot',
+    svgIds: 'c-parkwest-ballyfermot',
+    line: 'blue',
+  },
+  {
+    from: 'blanchardstown-hospital',
+    to: 'broombridge',
+    svgIds: 'c-blanchardstownHospital-broombridge',
+    line: 'blue',
+  },
+  {
+    from: 'clonsilla',
+    to: 'broombridge',
+    svgIds: 'c-clonsilla-broombridge',
+    line: 'blue',
+  },
+  {
+    from: 'lucan-adamstown',
+    to: 'liffey-valley',
+    svgIds: ['c-lucanAdamstown-1','c-lucanAdamstown-LiffeyValley'],
+    line: 'orange',
+  },
+  {
+    from: 'clondalkin-fonthill',
+    to: 'liffey-valley',
+    svgIds: 'c-clondalkin-fonthill',
+    line: 'orange',
+  },
+  {
+    from: 'clondalkin-fonthill',
+    to: 'clondalkin-village',
+    svgIds: 'c-clondalkinFontill-clondalkinVillage',
+    line: 'orange',
+  },
+  {
+    from: 'clondalkin-village',
+    to: 'red-cow',
+    svgIds: 'c-clondalkinVillage-redCow',
+    line: 'orange',
+  },
+  {
+    from: 'palmerstown',
+    to: 'chapelizod',
+    svgIds: 'c-palmerstown-chapelizod',
+    line: 'orange',
+  },
+  {
+    from: 'chapelizod',
+    to: 'ballyfermot',
+    svgIds: 'c-chapelizod-ballyfermot',
+    line: 'orange',
+  },
+  {
+    from: 'ballyfermot',
+    to: 'kylemore',
+    svgIds: 'c-ballyfermot-kylemore',
+    line: 'orange',
+  },
+  {
+    from: 'red-cow',
+    to: 'kylemore',
+    svgIds: 'c-redCow-kylemore',
+    line: 'orange',
+  },
+  {
+    from: 'blanchardstown-centre',
+    to: 'blanchardstown-hospital',
+    svgIds: 'c-blanchardstownCentre-blanchardstownHospital',
+    line: 'orange',
+  },
+  {
+    from: 'blanchardstown-hospital',
+    to: 'palmerstown',
+    svgIds: 'c-blanchardstownHospital-palmerstown',
+    line: 'orange',
+  },
+  {
+    from: 'blanchardstown-hospital',
+    to: 'liffey-valley',
+    svgIds: 'c-blanchardstownHospital-liffeyValley',
+    line: 'orange',
+  },
+  {
+    from: 'liffey-valley',
+    to: 'palmerstown',
+    svgIds: 'c-liffeyValley-palmerstown',
+    line: 'orange',
+  },
+  {
+    from: 'chapelizod',
+    to: 'heuston',
+    svgIds: 'c-chapelizod-heuston',
+    line: 'orange',
+  },
+  {
+    from: 'heuston',
+    to: 'stephens-green',
+    svgIds: 'c-heuston-b',
+    line: 'orange',
+  },
+  {
+    from: 'kylemore',
+    to: 'dodder',
+    svgIds: 'c-kylemore-dodder',
+    line: 'orange',
+  },
+  {
+    from: 'saggart',
+    to: 'red-cow',
+    svgIds: ['c-saggart-redCow','c-saggart-redCow1'],
+    line: 'red',
+  },
+  {
+    from: 'tallaght',
+    to: 'red-cow',
+    svgIds: 'c-tallaght-redCow',
+    line: 'red',
+  },
+ // Additional existing rail and transit links drawn with s-* IDs.
+  {
+    from: 'mulhuddart',
+    to: 'finglas',
+    svgIds: 's-mulhuddart-finglas',
+    line: 'pink',
+  },
+  {
+    from: 'finglas',
+    to: 'dcu',
+    svgIds: 's-finglas-dcu',
+    line: 'pink',
+  },
+  {
+    from: 'tallaght',
+    to: 'firhouse',
+    svgIds: 's-tallaght-firhouse',
+    line: 'pink',
+  },
+  {
+    from: 'firhouse',
+    to: 'dodder',
+    svgIds: 's-firhouse-dodder',
+    line: 'pink',
+  },
+  {
+    from: 'dodder',
+    to: 'dundrum',
+    svgIds: 's-dodder-dundrum',
+    line: 'pink',
+  },
+  {
+    from: 'dundrum',
+    to: 'ucd',
+    svgIds: 's-dundrum-ucd',
+    line: 'pink',
+  },
+  {
+    from: 'ucd',
+    to: 'st-vincents-hospital',
+    svgIds: 's-ucd-stVincentsHospital',
+    line: 'pink',
+  },
+  {
+    from: 'clonshaugh',
+    to: 'howth-junction',
+    svgIds: 's-clonshaugh-howthJunction',
+    line: 'pink',
+  },
+  {
+    from: 'howth-junction',
+    to: 'beaumont-hospital',
+    svgIds: 's-howthJunction-beaumountHospital',
+    line: 'pink',
+  },
+  {
+    from: 'dcu',
+    to: 'beaumont-hospital',
+    svgIds: 's-dcu-beaumontHospital',
+    line: 'pink',
+  },
+  {
+    from: 'cloghran',
+    to: 'clonshaugh',
+    svgIds: 's-cloghran-clonshaugh',
+    line: 'pink',
+  },
+  {
+    from: 'ballymun',
+    to: 'clonshaugh',
+    svgIds: 's-ballymun-clonshaugh',
+    line: 'pink',
+  },
+  {
+    from: 'dublin-airport',
+    to: 'cloghran',
+    svgIds: 's-dublinAirport-cloghran',
+    line: 'pink',
+  },
+  {
+    from: 'ballsbridge',
+    to: 'st-vincents-hospital',
+    svgIds: 's-ballsbridge-stVincentsHospital',
+    line: 'pink',
+  },
+  {
+    from: 'point',
+    to: 'st-vincents-hospital',
+    svgIds: 's-point-stVincentsHospital',
+    line: 'pink',
+  },
+  {
+    from: 'ballsbridge',
+    to: 'stephens-green',
+    svgIds: 's-ballsbridge-b',
+    line: 'pink',
+  },
+  {
+    from: 'finglas',
+    to: 'ballymun',
+    svgIds: 's-finglas-ballymun',
+    line: 'pink',
+  },
+  {
+    from: 'stephens-green',
+    to: 'merrion-gates',
+    svgIds: 's-b-merrionGates',
+    line: 'blue',
+  },
+  {
+    from: 'merrion-gates',
+    to: 'dun-laoghaire',
+    svgIds: 's-merrionGates-dunLaoghire',
+    line: 'blue',
+  },
+  {
+    from: 'dun-laoghaire',
+    to: 'shanganagh',
+    svgIds: 's-dunLaoghire-shanganagh',
+    line: 'blue',
+  },
+  {
+    from: 'shanganagh',
+    to: 'bray',
+    svgIds: 's-shanganagh-bray',
+    line: 'blue',
+  },
+  {
+    from: 'heuston',
+    to: 'connolly',
+    svgIds: 's-nearHeuston-connolly',
+    line: 'blue',
+  },
+  {
+    from: 'broombridge',
+    to: 'connolly',
+    svgIds: 's-broombridge-connolly',
+    line: 'blue',
+  },
+  {
+    from: 'stephens-green',
+    to: 'connolly',
+    svgIds: 's-b-connolly',
+    line: 'blue',
+  },
+  {
+    from: 'ballyfermot',
+    to: 'heuston',
+    svgIds: 's-ballyfermot-nearHeuston',
+    line: 'blue',
+  },
+  {
+    from: 'connolly',
+    to: 'howth-junction',
+    svgIds: 's-connolly-howthJunction',
+    line: 'blue',
+  },
+  {
+    from: 'howth-junction',
+    to: 'howth',
+    svgIds: 's-howthJunction-howth',
+    line: 'blue',
+  },
+  {
+    from: 'howth-junction',
+    to: 'clongriffen',
+    svgIds: 's-howthJunction-clongriffen',
+    line: 'blue',
+  },
+  {
+    from: 'clongriffen',
+    to: 'portmarnock',
+    svgIds: 's-clongriffen-portmarnock',
+    line: 'blue',
+  },
+  {
+    from: 'portmarnock',
+    to: 'malahide',
+    svgIds: 's-portmarnock-malahide',
+    line: 'blue',
+  },
+  {
+    from: 'malahide',
+    to: 'donabate-junction',
+    svgIds: 's-malahide-donabateJunction',
+    line: 'blue',
+  },
+  {
+    from: 'donabate-junction',
+    to: 'donabate',
+    svgIds: 's-donabateJunction-donabate',
+    line: 'blue',
+  },
+  {
+    from: 'connolly',
+    to: 'docklands',
+    svgIds: 's-connolly-docklands',
+    line: 'blue',
+  },
+  {
+    from: 'red-cow',
+    to: 'kylemore',
+    svgIds: 's-redCow-kylemore',
+    line: 'red',
+  },
+  {
+    from: 'kylemore',
+    to: 'fatima',
+    svgIds: 's-kylemore-fatima',
+    line: 'red',
+  },
+  {
+    from: 'fatima',
+    to: 'heuston',
+    svgIds: 's-fatima-heuston',
+    line: 'red',
+  },
+  {
+    from: 'heuston',
+    to: 'point',
+    svgIds: 's-heuston-point',
+    line: 'red',
+  },
+  {
+    from: 'finglas',
+    to: 'broombridge',
+    svgIds: 's-finglas-broombridge',
+    line: 'green',
+  },
+  {
+    from: 'broombridge',
+    to: 'ballymun',
+    svgIds: 's-broombridge-ballymun',
+    line: 'green',
+  },
+  {
+    from: 'ballymun',
+    to: 'dublin-airport',
+    svgIds: 's-ballumun-dublinAirport',
+    line: 'green',
+  },
+  {
+    from: 'charlemount',
+    to: 'dundrum',
+    svgIds: 's-charlemount-dundrum',
+    line: 'green',
+  },
+  {
+    from: 'dundrum',
+    to: 'sandyford',
+    svgIds: 's-dundrum-sandyford',
+    line: 'green',
+  },
+  {
+    from: 'sandyford',
+    to: 'gallops',
+    svgIds: 's-sandyford-gallops',
+    line: 'green',
+  },
+  {
+    from: 'gallops',
+    to: 'brides-glen',
+    svgIds: 's-gallops-bridesGlen',
+    line: 'green',
+  },
+  {
+    from: 'brides-glen',
+    to: 'shanganagh',
+    svgIds: 's-bridesGlan-shanganagh',
+    line: 'green',
+  },
+  {
+    from: 'brides-glen',
+    to: 'dun-laoghaire',
+    svgIds: 's-bridesGlen-dunLaoghaire',
+    line: 'green',
+  },
+  {
+    from: 'stephens-green',
+    to: 'charlemount',
+    svgIds: 's-stephensGreen-charlemount',
+    line: 'green',
+  },
+  {
+    from: 'stephens-green',
+    to: 'connolly',
+    svgIds: 's-stephensGreen-b',
+    line: 'green',
+  },
+  {
+    from: 'stephens-green',
+    to: 'broombridge',
+    svgIds: 's-b-broombridge',
+    line: 'green',
+  },
+]
 
-// The network is bidirectional, so route-finding can traverse either direction.
-// A segment can contain more than one SVG path when a connection is drawn in parts.
-
-export const segments = {
-  'm3-parkway:clonee': { svgIds: ['c-m3parkway-clonee'], from: 'm3-parkway', to: 'clonee', line: 'blue' },
-  'clonee:hansfield': { svgIds: ['c-clonee-hansfield'], from: 'clonee', to: 'hansfield', line: 'blue' },
-  'hansfield:clonsilla': { svgIds: ['c-hansfield-clonsilla'], from: 'hansfield', to: 'clonsilla', line: 'blue' },
-  'clonsilla:intel': { svgIds: ['c-clonsilla-intel'], from: 'clonsilla', to: 'intel', line: 'blue' },
-  'intel:maynooth': { svgIds: ['c-intel-maynooth'], from: 'intel', to: 'maynooth', line: 'blue' },
-  'clonee:intel': { svgIds: ['c-clonee-intel'], from: 'clonee', to: 'intel', line: 'pink' },
-  'lucan-adamstown:peamount': { svgIds: ['c-lucanAdamstown-Peamount'], from: 'lucan-adamstown', to: 'peamount', line: 'pink' },
-  'peamount:saggart': { svgIds: ['c-peamount-Saggart'], from: 'peamount', to: 'saggart', line: 'pink' },
-  'lucan-adamstown:clondalkin-fonthill': { svgIds: ['c-lucanAdamstown-clondalkinFonthill'], from: 'lucan-adamstown', to: 'clondalkin-fonthill', line: 'blue' },
-  'hazelhatch:lucan-adamstown': { svgIds: ['c-hazelhatch-lucanAdamstown'], from: 'hazelhatch', to: 'lucan-adamstown', line: 'blue' },
-  'hazelhatch:sallins': { svgIds: ['c-hazelhatch-sallins'], from: 'hazelhatch', to: 'sallins', line: 'blue' },
-  'lucan-adamstown:liffey-valley': { svgIds: ['c-lucanAdamstown-1', 'c-lucanAdamstown-LiffeyValley'], from: 'lucan-adamstown', to: 'liffey-valley', line: 'orange' },
-  'clondalkin-fonthill:liffey-valley': { svgIds: ['c-clondalkin-fonthill'], from: 'clondalkin-fonthill', to: 'liffey-valley', line: 'orange' },
-  'clondalkin-fonthill:clondalkin-village': { svgIds: ['c-clondalkinFontill-clondalkinVillage'], from: 'clondalkin-fonthill', to: 'clondalkin-village', line: 'orange' },
-  'clondalkin-village:red-cow': { svgIds: ['c-clondalkinVillage-redCow'], from: 'clondalkin-village', to: 'red-cow', line: 'orange' },
-  'palmerstown:chapelizod': { svgIds: ['c-palmerstown-chapelizod'], from: 'palmerstown', to: 'chapelizod', line: 'orange' },
-  'chapelizod:ballyfermot': { svgIds: ['c-chapelizod-ballyfermot'], from: 'chapelizod', to: 'ballyfermot', line: 'orange' },
-  'ballyfermot:kylemore': { svgIds: ['c-ballyfermot-kylemore'], from: 'ballyfermot', to: 'kylemore', line: 'orange' },
-  'red-cow:kylemore': { svgIds: ['c-redCow-kylemore'], from: 'red-cow', to: 'kylemore', line: 'orange' },
-  'blanchardstown-centre:blanchardstown-hospital': { svgIds: ['c-blanchardstownCentre-blanchardstownHospital'], from: 'blanchardstown-centre', to: 'blanchardstown-hospital', line: 'orange' },
-  'blanchardstown-hospital:palmerstown': { svgIds: ['c-blanchardstownHospital-palmerstown'], from: 'blanchardstown-hospital', to: 'palmerstown', line: 'orange' },
-  'blanchardstown-hospital:liffey-valley': { svgIds: ['c-blanchardstownHospital-liffeyValley'], from: 'blanchardstown-hospital', to: 'liffey-valley', line: 'orange' },
-  'saggart:red-cow': { svgIds: ['c-saggart-redCow'], from: 'saggart', to: 'red-cow', line: 'red' },
+export const segments = Object.create(null)
+for (const { from, to, svgIds: ids, line } of links) {
+  const svgIds = Array.isArray(ids) ? ids : [ids]
+  const key = `${from}:${to}`
+  if (segments[key]) {
+    segments[key].svgIds.push(...svgIds)
+  } else {
+    segments[key] = {
+      from,
+      to,
+      svgIds,
+      line,
+    }
+  }
 }
 
-// Return the segment regardless of which direction a route traverses it.
 export function getSegment(from, to) {
   return segments[`${from}:${to}`] ?? segments[`${to}:${from}`] ?? null
 }

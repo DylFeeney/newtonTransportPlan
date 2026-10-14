@@ -1,6 +1,6 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
-import mapSample from '../map_sample_v2.svg?raw'
+import mapSample from '../map_sample_v3.svg?raw'
 import { stations } from './data/stations'
 import { segments } from './data/segments'
 import { findRoute, getRouteSegments } from './services/routeFinder'
